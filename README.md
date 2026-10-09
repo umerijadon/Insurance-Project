@@ -43,10 +43,6 @@ Public medical insurance dataset (`data/insurance.csv`): 1,338 rows, no missing 
 Without the interaction feature, linear regression drops from R² 0.91 to 0.81.
 Log-transforming the target did not help here and is reported as a negative result.
 
-![Charges vs BMI by smoking status](images/charges_by_smoker_bmi.png)
-![Model comparison](images/model_comparison.png)
-![Feature importance](images/feature_importance.png)
-
 ## Recommendations
 
 1. Make smoking status the primary pricing factor.
@@ -65,11 +61,3 @@ Log-transforming the target did not help here and is reported as a negative resu
 
 Hyperparameter tuning, a smoker × age interaction, Gamma-GLM or quantile models for skewed costs, and a small Streamlit app for predictions.
 
-## How to run
-
-```bash
-git clone <your-repo-url>
-cd <your-repo>
-pip install -r requirements.txt
-jupyter notebook notebooks/insurance.ipynb
-```
